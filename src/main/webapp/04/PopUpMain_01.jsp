@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  String popupMain = "on"; //팝업창 출력 여부
+  String popupMode = "on"; //팝업창 출력 여부
 %>
 
 <html>
@@ -23,10 +23,10 @@
   <h2> 팝업 메인 페이지</h2>
   <%
     for(int i = 0; i < 10; i++){
-      out.println("현재 팝업창은 " + popupMain + "상태입니다<br/>");
+      out.println("현재 팝업창은 " + popupMode + "상태입니다<br/>");
     }
 
-    if(popupMain.equals("on")){
+    if(popupMode.equals("on")){
   %>
   <div id="popup">
     <h2 align="center">공지사항 팝업</h2>

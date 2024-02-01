@@ -3,7 +3,7 @@
 <%
     int pInt2 = (Integer)pageContext.getAttribute("pageInt");
     //String pStr2 = pageContext.getAttribute("pageStr").toString();
-    Person person2 = (Person)pageContext.getAttribute("pagePerson"); //(Person)?
+    Person person2 = (Person)pageContext.getAttribute("pagePerson"); //(Person)형 변환
 %>
 
 <ul>

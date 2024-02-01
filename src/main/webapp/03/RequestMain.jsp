@@ -14,8 +14,8 @@
 <body>
     <h2>request 영역의 속성 값 삭제</h2>
     <%
-//    request.removeAttribute("reqStr");
-//                           -> 주석처리를 해야 RequestForWord.jsp 실행 할 때 "reqStr" 무사히 출력 가능
+        //  request.removeAttribute("reqStr");
+//    -> 주석처리를 해야 RequestForWord.jsp 실행 할 때 "reqStr" 무사히 출력 가능
       request.removeAttribute("reqInt");
     %>
      <h2>request 영역의 속성 값 읽기</h2>
