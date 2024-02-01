@@ -1,11 +1,5 @@
 <%@ page import="java.text.SimpleDateFormat" %>
-<%@ page import="java.util.Collection" %><%--
-  Created by IntelliJ IDEA.
-  User: it
-  Date: 2024-01-31
-  Time: 오후 12:30
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.util.Collection" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <%
@@ -14,7 +8,8 @@
 
     //응답헤더에 추가할 값 준비 (메인에서 가져오고 변수에 다 저장)
     SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-    long add_date = sd.parse(request.getParameter("add_date")).getTime(); //String으로 받아오기 때문에 형식에 맞게 형변환 해줌
+    //String으로 받아오기 때문에 형식에 맞게 형변환 해줌
+    long add_date = sd.parse(request.getParameter("add_date")).getTime();
     int add_int = Integer.parseInt(request.getParameter("add_int"));
     String add_str = request.getParameter("add_str");
 
