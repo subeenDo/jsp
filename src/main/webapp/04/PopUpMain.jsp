@@ -41,6 +41,7 @@
 
     if(popupMode.equals("on")){
   %>
+  <%-- 여기에 스크립트를 넣어서 하지만 그렇게 하면 복잡하니까 자바코드 만들어줌 - JSFunction--%>
   <div id="popup">
     <h2 align="center">공지사항 팝업</h2>
     <div align="right">

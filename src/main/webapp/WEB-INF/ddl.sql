@@ -48,6 +48,10 @@ CREATE SEQUENCE seq_board_num
     INCREMENT BY 1 --1씩 증가
     START WITH 1 --1부터 시작
     MINVALUE 1 --최소값 1
+<<<<<<< HEAD
     nomaxvalue -- 최대값 무한대(사이클 ㄴㄴ)
+=======
+    nomaxvalue -- 최대값 무한대(사이클 ㄴㄴ-한정하게 되면 되돌아서 다시 출력되므로)
+>>>>>>> d95d19b (001)
 nocycle -- 순환
 nocache; --캐시 안함
