@@ -21,6 +21,5 @@
             <a href="../09/List.jsp">게시판(페이징 o)</a>
         </td>
     </tr>
-
 </table>
 </html>
