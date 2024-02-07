@@ -16,7 +16,7 @@
     String name = "테스트1";
 
     //쿼리문 생성
-    String sql = "INSERT INTO scott.member_jsp VALUES(?,?,?,sysdate)";
+    String sql = "INSERT INTO member_jsp VALUES(?,?,?,sysdate)";
     PreparedStatement psmt = jdbc.con.prepareStatement(sql);
 
     psmt.setString(1,id);
