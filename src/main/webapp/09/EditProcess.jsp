@@ -2,29 +2,24 @@
 <%@ page import="com.model1.board.BoardDAO" %>
 <%@ page import="com.util.JSFunction" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file = "IsloggedIn.jsp"%>
-
 <%
+    String num = request.getParameter("num");
     String title = request.getParameter("title");
     String content = request.getParameter("content");
-
+    //System.out.println("edit process :::" + num + " :::" + title + " :::" + content);
     BoardDTO dto = new BoardDTO();
     dto.setTitle(title);
     dto.setContent(content);
-    dto.setId(session.getAttribute("UserId").toString());
+    dto.setNum(num);
 
     BoardDAO dao = new BoardDAO();
-    //int iResult = dao.insertWrite(dto);    // 잠깐
-    int iResult = 0; //페이징용 글쓰기
-    for(int i=0; i<=100; i++){
-        dto.setTitle(title+ " -"+i);
-        iResult = dao.insertWrite(dto);
-    }
+    int affected = dao.updateEdit(dto);
+
     dao.close();
 
-    if(iResult == 1){//성공
-        response.sendRedirect("List.jsp");
+    if(affected == 1){//성공
+        response.sendRedirect("View.jsp?num="+dto.getNum());
     }else{//실패
-        JSFunction.alertBack("글쓰기 실패", out);
+        JSFunction.alertBack("수정 실패", out);
     }
 %>

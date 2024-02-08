@@ -23,6 +23,14 @@
         <param-name>OraclePwd</param-name>
         <param-value>TIGER</param-value>
     </context-param>
+    <context-param>
+        <param-name>POSTS_PER_PAGE</param-name>
+        <param-value>10</param-value>
+    </context-param>
+    <context-param>
+        <param-name>PAGES_PER_BLOCK</param-name>
+        <param-value>5</param-value>
+    </context-param>
     <filter>
         <filter-name>SetCharEncoding</filter-name>
         <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>

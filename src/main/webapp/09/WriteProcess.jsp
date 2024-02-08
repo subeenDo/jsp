@@ -14,11 +14,8 @@
     dto.setId(session.getAttribute("UserId").toString());
 
     BoardDAO dao = new BoardDAO();
-    //int iResult = dao.insertWrite(dto);    // 잠깐
-    int iResult = 0; //페이징용 글쓰기
-    for(int i=0; i<=100; i++){
-        dto.setTitle(title+ " -"+i);
-        iResult = dao.insertWrite(dto);
+    int iResult = dao.insertWrite(dto);
+
     }
     dao.close();
 
