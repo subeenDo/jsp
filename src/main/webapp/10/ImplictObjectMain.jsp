@@ -25,6 +25,6 @@
     </ul>
 
     <jsp:forward page="ImplictForward.jsp"></jsp:forward>
-</body>
+
 </body>
 </html>

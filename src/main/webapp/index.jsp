@@ -6,15 +6,16 @@
     <title>JSP Project</title>
     <%!
         String str1 = "JSP";
-        String str2 = "안녕하세요";
+        String str2 = "뉴진스";
     %>
 </head>
 <body>
-<h2> 처음 만들어보는 JSP</h2>
+<h2>저기요</h2>
 <br/>
     <p>
         <%
-            out.println (str2+str1+"입니다. 열심히 공부 합시다");
+            out.println (str1+"하려면 어떻게 하죠?</br>");
+            out.println (str2+"의 Hype Boy요");
         %>
 
     </p>
