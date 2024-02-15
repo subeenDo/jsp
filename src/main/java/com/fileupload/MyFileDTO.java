@@ -36,7 +36,7 @@ public class MyFileDTO {
         return ofile;
     }
 
-    public void setofile(String ofile) {
+    public void setOfile(String ofile) {
         this.ofile = ofile;
     }
 

@@ -44,7 +44,7 @@ public class MyFileDAO extends DBConnPool {
                 dto.setTitle(rs.getString("title"));
                 dto.setCate(rs.getString("cate"));
                 dto.setSfile(rs.getString("sfile"));
-                dto.setofile(rs.getString("ofile"));
+                dto.setOfile(rs.getString("ofile"));
                 dto.setPostdate(rs.getString("postdate"));
                 fileList.add(dto);
             }
